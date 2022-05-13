@@ -1,3 +1,11 @@
+from api.filters import TitleFilter
+from api.mixins import CreateListDestroyViewSet
+from api.permissions import AdminOrReadOnly, IsAdmin, IsAuthorOrStaffOrReadOnly
+from api.serializers import (CategoriesSerializer, CommentSerializer,
+                             GenresSerializer, ReadTitlesSerializer,
+                             ReviewSerializer, SignupSerializer,
+                             TokenSerializer, UserMeSerializer, UserSerializer,
+                             WriteTitlesSerializer)
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
@@ -11,15 +19,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Category, Genre, Review, Title, User
-
-from api.filters import TitleFilter
-from api.mixins import CreateListDestroyViewSet
-from api.permissions import AdminOrReadOnly, IsAdmin, IsAuthorOrStaffOrReadOnly
-from api.serializers import (CategoriesSerializer, CommentSerializer,
-                             GenresSerializer, ReadTitlesSerializer,
-                             ReviewSerializer, SignupSerializer,
-                             TokenSerializer, UserMeSerializer, UserSerializer,
-                             WriteTitlesSerializer)
 
 
 @api_view(['POST'])

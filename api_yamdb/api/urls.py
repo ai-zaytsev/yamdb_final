@@ -1,9 +1,8 @@
-from django.urls import include, path
-from rest_framework.routers import DefaultRouter
-
 from api.views import (CategoriesViewSet, CommentViewSet, GenresViewSet,
                        ReviewViewSet, TitlesViewSet, UserViewSet,
                        get_confirmation_number, get_token)
+from django.urls import include, path
+from rest_framework.routers import DefaultRouter
 
 app_name = 'api'
 
