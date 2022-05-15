@@ -1,8 +1,7 @@
 name: Yamdb workflow
 
-on: [push]
-
-  workflow_dispatch:
+on: 
+  [push]
 
 jobs:
   tests:
