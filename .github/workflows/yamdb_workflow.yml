@@ -73,7 +73,7 @@ jobs:
             sudo docker-compose up -d 
   
   send_message:
-    name: Sending message to Telegrem
+    name: Sending message to Telegram
     runs-on: ubuntu-latest
     needs: deploy
     steps:
@@ -82,4 +82,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: ${{ github.workflow }} exited with a code 'OK'!
+          message: ${{ github.workflow }} exited with a code 'SUCCESS'!
