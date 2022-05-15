@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: aizaytsev/yamdb_final
+          tags: aizaytsev/yamdb_final:latest
 
   deploy:
     name: Deploying
