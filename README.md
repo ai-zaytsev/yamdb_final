@@ -1,3 +1,5 @@
+![Yamdb workflow](https://github.com/ai-zaytsev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 # My API project
 ## Project is aimed to accumulate users' reviews on different subjects
 ### Stack used: 
