@@ -14,7 +14,7 @@
 docker pull aizaytsev/api_yamdb
 ```
 
-3. Configure .git:
+3. Configure .env:
 ```
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
