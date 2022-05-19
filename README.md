@@ -39,8 +39,11 @@ docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
 ```
 
-6. Go to http://localhost/
+6. Go to http://localhost/ 
+ 
+ 
+*Authors*: Alex, Alexander, Ilya  
 
+7. Link to working project http://51.250.101.193
 
-*Authors*: Alex, Alexander, Ilya 
 
